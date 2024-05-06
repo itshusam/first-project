@@ -76,7 +76,10 @@ while True:
         task=input(("please enter the task you want to add"))
         add_task(to_do_list, task)
     elif choise=="2":
-        view_tasks(to_do_list)
+        if not my_list:
+            print("The list is empty.")
+        else :
+            view_tasks(to_do_list)
     elif choise=="3":
         task=input("which task you want to mark as complete?")
         mark_as_complete(to_do_list, task)
@@ -85,5 +88,7 @@ while True:
         delete_task(to_do_list, task)
     elif choise=="5":
         sys.exit()
+    else :
+        print("please choose one of the 5 options")
 
 
