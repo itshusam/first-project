@@ -76,7 +76,7 @@ while True:
         task=input(("please enter the task you want to add"))
         add_task(to_do_list, task)
     elif choise=="2":
-        if not my_list:
+        if not to_do_list:
             print("The list is empty.")
         else :
             view_tasks(to_do_list)
